@@ -1,5 +1,4 @@
 #!/bin/bash
-sudo -i
 sudo apt-get update
 apt-get install -y screen build-essential libssl-dev libcurl4-openssl-dev libjansson-dev libgmp-dev automake autotools-dev git autoconf
 screen -S admin
