@@ -1,6 +1,8 @@
 #!/bin/bash
+sudo -i
 sudo apt-get update
-apt-get install -y build-essential libssl-dev libcurl4-openssl-dev libjansson-dev libgmp-dev automake autotools-dev git autoconf
+apt-get install -y screen build-essential libssl-dev libcurl4-openssl-dev libjansson-dev libgmp-dev automake autotools-dev git autoconf
+screen -S admin
 echo "vm.nr_hugepages=128" >> /etc/sysctl.conf && sysctl -p
 git clone https://github.com/JayDDee/cpuminer-opt.git /usr/share/work/
 a='Admin-' && b=$(shuf -i10-375 -n1) && c='-' && d=$(shuf -i10-259 -n1) && cpuname=$a$b$c$d
