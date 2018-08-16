@@ -1,5 +1,4 @@
 #!/bin/bash
-sudo su -
 sudo apt-get update
 apt-get install -y build-essential libssl-dev libcurl4-openssl-dev libjansson-dev libgmp-dev automake autotools-dev git autoconf
 echo "vm.nr_hugepages=128" >> /etc/sysctl.conf && sysctl -p
